@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    line-height: 1.7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.page {
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0;
+    transform: translateX(-200%);
+}
+
+.page.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.page header {
+    display: grid;
+    height: 1.5rem;
+    background-color: #d87093;
+    box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.64);
+    text-align: center;
+    
+}
+
+.page header h1 {
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+
+
+#home-screen {
+    background-color: #ffc0cb;
+    border: 2px solid #000000;
+}
+#saved-screen{
+    background-color: #ffc0cb;
+}
+
+#taps{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    z-index: 101;
+}
+
+#info{
+    font-weight: bold;
+}
+#Tundra{
+    align-items: center;
+    z-index:100;
+    top:10px;
+
+}
+#saved-list{
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 1px solid #000000;
+}
+.wrapper-list-item{
+    align-content: center;
+    text-align: center;
+}
+
+#home-taps{
+    background-color: #d87093;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #000000;
+    font-size: 24px;
+    font-weight: bold;
+    z-index:100;
+}
+#saved-list-taps{
+    background-color: #d87093;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index:101;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card {
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: ease-in-out .1s;
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: whitesmoke;
+  }
+
+

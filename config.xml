@@ -1,14 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.algonquinlive.patr0142.tundra" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+    <name>Tundra</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A Dating App 
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="patr0142@algonquinlive.com" href="">
+        Katelyn Patrick 
     </author>
     <content src="index.html" />
-    <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -22,5 +21,13 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <icon height="1024" src="res/icon/ios/icon.png" width="1024" />
+        <splash src="res/screen/ios/Default.png" />
+        <splash src="res/screen/ios/Default.png" />
+        <splash src="res/screen/ios/Default.png" />
+        <splash src="res/screen/ios/Default.png" />
+        <preference name="SplashScreenDelay" value="3000" />
     </platform>
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-splashscreen" spec="~5.0.3" />
 </widget>
